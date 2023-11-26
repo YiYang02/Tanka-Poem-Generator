@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Previously Generated Tanka</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/previously_generated_tanka.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='js/display_video.js') }}"></script>
+</head>
+<body>
+    <h1>Previously Generated Tanka Poem</h1>
+
+    <div class="content-container">
+        <div class="video-column">
+            <video controls>
+                <source src="{{ url_for('static', filename='videos/' + poem_data['id']) }}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="poem-column">
+            <div id="tanka-poem">
+                {% for line in poem_data['poem'] %}
+                    <p>{{ line }}</p>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <button onclick="goBack()">Back to Main Page</button>
+        <button id="read-button" onclick="readPoem()">Read Poem</button>
+    </div>
+</body>
+</html>

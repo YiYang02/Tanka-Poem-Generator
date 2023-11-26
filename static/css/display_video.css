@@ -1,0 +1,58 @@
+/* display_video.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+.content-container {
+    width: 80%; /* Adjust as needed */
+    max-width: 1200px; /* Adjust as needed */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.video-column {
+    flex: 1; /* Takes up as much space as it can */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.poem-column {
+    flex-basis: 300px; /* Minimum width for the poem column */
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#tanka-poem, #read-button {
+    display: none;
+    white-space: pre-line;
+}
+
+video {
+    max-width: 100%; /* Ensures video is responsive */
+    height: auto;
+}
+
+button {
+    margin-top: 10px;
+}
+
+.button-container {
+    text-align: center; /* Centers the button */
+    margin-top: 20px; /* Spacing from the table */
+}
+
+#read-button {
+    display: none; /* Initially hidden */
+    /* Style for the button as needed */
+}

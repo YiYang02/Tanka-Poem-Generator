@@ -1,0 +1,44 @@
+/* index.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4; /* Light gray background for a subtle, elegant look */
+}
+
+.centered-form {
+    text-align: center;
+    margin-top: 50px; /* More space from the top for a better layout */
+    background-color: white; /* White background for the form area */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners for the form */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for a subtle 3D effect */
+    width: 300px; /* Set a specific width for the form */
+}
+
+.centered-form h1 {
+    color: #333; /* Dark grey color for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.centered-form input[type="file"] {
+    border: 1px solid #ddd; /* Border for the file input */
+    padding: 5px;
+    background-color: #fff; /* White background for the input field */
+    margin-bottom: 10px; /* Space below the input field */
+}
+
+.centered-form input[type="submit"] {
+    background-color: #5CBA47; /* A green color for the submit button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px; /* Rounded corners for the button */
+}
+
+.centered-form input[type="submit"]:hover {
+    background-color: #4aa336; /* A slightly darker green for hover effect */
+}

@@ -1,0 +1,38 @@
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allows items to wrap to the next line if necessary */
+}
+
+.video-column {
+    flex: 1; /* Allows the video column to grow */
+    max-width: 50%; /* Maximum width of the video column */
+    padding: 10px;
+}
+
+.video-column video {
+    width: 100%; /* Makes the video take the full width of its container */
+    max-width: 500px; /* Maximum width of the video itself */
+    height: auto; /* Keeps the aspect ratio of the video */
+}
+
+.poem-column {
+    flex: 1; /* Allows the poem column to grow */
+    max-width: 50%; /* Maximum width of the poem column */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.button-container {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    margin: 5px;
+}
